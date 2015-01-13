@@ -1,11 +1,13 @@
 describe("People", function() {
 
-  var peeps = new People(["jill", "jack"]);
+  var peeps = new People(["jill", "jack"]); 
+  // akin to creating a new instance of a class in ruby
+  //classes (ruby) and constructors (JS) are the same thing
 
   describe("name get", function() {
     it("returns all the peoples' names", function() {
       expect(peeps.getNames()).toEqual(["Jill", "Jack"]);
-    });
+    }); //This is a prototype, which is the equivalent of an instance method in Ruby.
   });
 
   describe("sort", function() {
